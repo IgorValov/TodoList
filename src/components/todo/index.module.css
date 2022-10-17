@@ -1,0 +1,14 @@
+.item {
+    font-family: monospace;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(158, 22, 22);
+}
+
+.delete {
+    display: none;
+}
