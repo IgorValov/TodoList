@@ -1,4 +1,4 @@
-import { ADD_TODO, TOGGLE_TODO } from "../actions/types/todo";
+import { ADD_TODO, DELETE_TODO } from "../actions/types/todo";
 
 // 1.
 const initialState = {
@@ -31,7 +31,7 @@ export default function todoReducer(state = initialState, action) {
       };
     }
 
-    case TOGGLE_TODO: {
+    case DELETE_TODO: {
       const { id } = action.payload;
 
       const targetTodo = state.byIds[id];
